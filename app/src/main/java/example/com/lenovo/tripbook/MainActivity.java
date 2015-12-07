@@ -58,19 +58,19 @@ public class MainActivity extends Activity {
         }
     }
 
-    private SDKReceiver mReceiver;
+//    private SDKReceiver mReceiver;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // 注册 SDK 广播监听者
-        IntentFilter iFilter = new IntentFilter();
-        iFilter.addAction(SDKInitializer.SDK_BROADTCAST_ACTION_STRING_PERMISSION_CHECK_ERROR);
-        iFilter.addAction(SDKInitializer.SDK_BROADCAST_ACTION_STRING_NETWORK_ERROR);
-        mReceiver = new SDKReceiver();
-        registerReceiver(mReceiver, iFilter);
+//        // 注册 SDK 广播监听者
+//        IntentFilter iFilter = new IntentFilter();
+//        iFilter.addAction(SDKInitializer.SDK_BROADTCAST_ACTION_STRING_PERMISSION_CHECK_ERROR);
+//        iFilter.addAction(SDKInitializer.SDK_BROADCAST_ACTION_STRING_NETWORK_ERROR);
+//        mReceiver = new SDKReceiver();
+//        registerReceiver(mReceiver, iFilter);
 
         allFlipper = (ViewFlipper) findViewById(R.id.allFlipper);
         new Handler().postDelayed(new Runnable() {

@@ -62,28 +62,28 @@ public class MainPageActivity extends Activity{
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		SDKInitializer.initialize(this.getApplicationContext());
+//		SDKInitializer.initialize(this.getApplicationContext());
 		setContentView(R.layout.activity_mainpage);
 
 		// 地图初始化
-		mMapView = (MapView) findViewById(R.id.bmapView);
-		mBaiduMap = mMapView.getMap();
-
-		mCurrentMode = MyLocationConfiguration.LocationMode.NORMAL;
-		mBaiduMap.setMyLocationConfigeration(new MyLocationConfiguration(
-				mCurrentMode, true, mCurrentMarker));// 传入null则，默认图标
-
-		// 开启定位图层
-		mBaiduMap.setMyLocationEnabled(true);
-		// 定位初始化
-		mLocClient = new LocationClient(this);
-		mLocClient.registerLocationListener(myListener);
-		LocationClientOption option = new LocationClientOption();
-		option.setOpenGps(true);// 打开gps
-		option.setCoorType("bd09ll"); // 设置坐标类型
-		option.setScanSpan(1000);
-		mLocClient.setLocOption(option);
-		mLocClient.start();
+//		mMapView = (MapView) findViewById(R.id.bmapView);
+//		mBaiduMap = mMapView.getMap();
+//
+//		mCurrentMode = MyLocationConfiguration.LocationMode.NORMAL;
+//		mBaiduMap.setMyLocationConfigeration(new MyLocationConfiguration(
+//				mCurrentMode, true, mCurrentMarker));// 传入null则，默认图标
+//
+//		// 开启定位图层
+//		mBaiduMap.setMyLocationEnabled(true);
+//		// 定位初始化
+//		mLocClient = new LocationClient(this);
+//		mLocClient.registerLocationListener(myListener);
+//		LocationClientOption option = new LocationClientOption();
+//		option.setOpenGps(true);// 打开gps
+//		option.setCoorType("bd09ll"); // 设置坐标类型
+//		option.setScanSpan(1000);
+//		mLocClient.setLocOption(option);
+//		mLocClient.start();
 
 
 		slidingLayout = (SlidingLayout) findViewById(R.id.sliding);
@@ -237,26 +237,25 @@ public class MainPageActivity extends Activity{
 		}
 	}
 
-	@Override
-	protected void onPause() {
-		mMapView.onPause();
-		super.onPause();
-	}
-
-	@Override
-	protected void onResume() {
-		mMapView.onResume();
-		super.onResume();
-	}
-
-	@Override
-	protected void onDestroy() {
-		// 退出时销毁定位
-		mLocClient.stop();
-		// 关闭定位图层
-		mBaiduMap.setMyLocationEnabled(false);
-		mMapView.onDestroy();
-		mMapView = null;
-		super.onDestroy();
-	}
+//	@Override
+//	protected void onPause() {
+//		mMapView.onPause();
+//		super.onPause();
+//	}
+//
+//	@Override
+//	protected void onResume() {
+//		mMapView.onResume();
+//		super.onResume();
+//	}
+//
+//	@Override
+//	protected void onDestroy() {
+//		// 退出时销毁定位
+//		mLocClient.stop();
+//		// 关闭定位图层
+//		mBaiduMap.setMyLocationEnabled(false);mMapView.onDestroy();
+//		mMapView = null;
+//		super.onDestroy();
+//	}
 }
