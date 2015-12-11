@@ -1,5 +1,5 @@
 package example.com.lenovo.tripbook;
-//我就试试
+//我就试试啊
 import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.content.res.TypedArray;
