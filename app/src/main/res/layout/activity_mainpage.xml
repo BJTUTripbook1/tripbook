@@ -1,4 +1,4 @@
-<example.com.lenovo.tripbook.SlidingLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<example.com.lenovo.tripbook.view.SlidingLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/sliding"
     android:layout_width="fill_parent"
@@ -81,7 +81,7 @@
                 android:src="@drawable/arrow_up"
                 android:scaleType="fitXY" />
 
-            <example.com.lenovo.tripbook.CircleButton
+            <example.com.lenovo.tripbook.view.CircleButton
                 android:id="@+id/circleButton"
                 android:layout_width="45dp"
                 android:layout_height="45dp"
@@ -91,4 +91,4 @@
 
         </FrameLayout>
 
-</example.com.lenovo.tripbook.SlidingLayout>
+</example.com.lenovo.tripbook.view.SlidingLayout>
