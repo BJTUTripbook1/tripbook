@@ -129,8 +129,8 @@ public class MainActivity extends Activity {
 
         Intent intent = new Intent(context, MainPageActivity.class);
         list.add(getView("MainPageActivity", intent));
-        Intent intent2 = new Intent(context, DynamicActivity.class);
-        list.add(getView("DynamicActivity", intent2));
+        Intent intent2 = new Intent(context, TheTabActivity.class);
+        list.add(getView("TheTabActivity", intent2));
         myAdapter=new PageAdapter(list);
         viewPager.setAdapter(myAdapter);
         viewPager.setCurrentItem(0);
