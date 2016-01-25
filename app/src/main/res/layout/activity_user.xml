@@ -1,4 +1,4 @@
-<example.com.lenovo.tripbook.StaggeredGridView
+<example.com.lenovo.tripbook.view.StaggeredGridView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/grid_view"

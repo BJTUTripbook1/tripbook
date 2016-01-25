@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package example.com.lenovo.tripbook;
+package example.com.lenovo.tripbook.view;
 
 import android.content.Context;
 import android.database.DataSetObserver;
@@ -41,6 +41,9 @@ import android.widget.ListAdapter;
 import android.widget.Scroller;
 
 import java.util.ArrayList;
+
+import example.com.lenovo.tripbook.adapter.HeaderViewListAdapter;
+import example.com.lenovo.tripbook.util.ClassLoaderSavedState;
 
 /**
  * An extendable implementation of the Android {@link android.widget.ListView}

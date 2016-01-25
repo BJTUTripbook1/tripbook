@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package example.com.lenovo.tripbook;
+package example.com.lenovo.tripbook.adapter;
 
 import android.database.DataSetObserver;
 import android.view.View;
@@ -26,6 +26,8 @@ import android.widget.ListAdapter;
 import android.widget.WrapperListAdapter;
 
 import java.util.ArrayList;
+
+import example.com.lenovo.tripbook.view.StaggeredGridView;
 
 /**
  * ListAdapter used when a ListView has header views. This ListAdapter

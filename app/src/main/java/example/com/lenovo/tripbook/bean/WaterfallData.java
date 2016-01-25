@@ -1,4 +1,4 @@
-package example.com.lenovo.tripbook;
+package example.com.lenovo.tripbook.bean;
 
 import java.util.ArrayList;
 

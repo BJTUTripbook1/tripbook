@@ -1,4 +1,4 @@
-package example.com.lenovo.tripbook;
+package example.com.lenovo.tripbook.activity;
 
 import java.util.ArrayList;
 
@@ -13,6 +13,11 @@ import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import example.com.lenovo.tripbook.R;
+import example.com.lenovo.tripbook.adapter.WaterfallAdapter;
+import example.com.lenovo.tripbook.bean.WaterfallData;
+import example.com.lenovo.tripbook.view.StaggeredGridView;
 
 public class UserActivity extends Activity implements AbsListView.OnScrollListener, AbsListView.OnItemClickListener, AdapterView.OnItemLongClickListener {
 

@@ -8,7 +8,6 @@ import android.widget.TabHost;
 import android.widget.TabHost.TabSpec;
 
 import example.com.lenovo.tripbook.R;
-import example.com.lenovo.tripbook.UserActivity;
 
 public class TheTabActivity extends TabActivity {
     /** Called when the activity is first created. */
@@ -29,7 +28,7 @@ public class TheTabActivity extends TabActivity {
         tabHost.addTab(spec);//添加进tabHost  
 
         //第二个Tab  
-        intent = new Intent(this,UserActivity.class);//第二个Intent用作Tab1显示的内容
+        intent = new Intent(this,RealeasingActivity.class);//第二个Intent用作Tab1显示的内容
         spec = tabHost.newTabSpec("tab2")//新建一个 Tab  
                 .setIndicator("写状态", res.getDrawable(android.R.drawable.ic_menu_edit))//设置名称以及图标
                 .setContent(intent);//设置显示的intent，这里的参数也可以是R.id.xxx

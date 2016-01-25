@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package example.com.lenovo.tripbook;
+package example.com.lenovo.tripbook.util;
 
 import android.os.Parcel;
 import android.os.Parcelable;

@@ -31,7 +31,6 @@ import example.com.lenovo.tripbook.R;
 import example.com.lenovo.tripbook.view.SlidingLayout;
 import example.com.lenovo.tripbook.adapter.TimeLineAdapter;
 import example.com.lenovo.tripbook.bean.TimeLineModel;
-import example.com.lenovo.tripbook.UserActivity;
 import example.com.lenovo.tripbook.view.CircleButton;
 
 public class MainPageActivity extends Activity{

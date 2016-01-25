@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".UserActivity"
+            android:name=".activity.UserActivity"
             android:label="@string/title_activity_user" >
         </activity>
         <activity android:name=".activity.MainPageActivity"
@@ -43,7 +43,29 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="example.com.lenovo.tripbook.activity.RealeasingActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="example.com.lenovo.tripbook.activity.AlbumActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="example.com.lenovo.tripbook.activity.ImageFile" >
+        </activity>
+        <activity
+            android:name="example.com.lenovo.tripbook.activity.ShowAllPhoto" >
+        </activity>
+        <activity
+            android:name="example.com.lenovo.tripbook.activity.GalleryActivity">
+        </activity>
+        
         <service
             android:name="com.baidu.location.f"
             android:enabled="true"

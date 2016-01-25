@@ -1,4 +1,4 @@
-package example.com.lenovo.tripbook;
+package example.com.lenovo.tripbook.adapter;
 
 
 import android.content.Context;
@@ -13,6 +13,9 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Random;
+
+import example.com.lenovo.tripbook.R;
+import example.com.lenovo.tripbook.view.DynamicHeightTextView;
 
 
 /***
@@ -66,8 +69,8 @@ public class WaterfallAdapter extends ArrayAdapter<String> {
         int backgroundIndex = position >= mBackgroundColors.size() ?
                 position % mBackgroundColors.size() : position;
 
-        convertView.setBackgroundResource(mBackgroundColors.get(backgroundIndex));
-
+       // convertView.setBackgroundResource(mBackgroundColors.get(backgroundIndex));
+        convertView.setBackgroundResource(R.drawable.background);
         Log.d(TAG, "getView position:" + position + " h:" + positionHeight);
 
         vh.txtLineOne.setHeightRatio(positionHeight);

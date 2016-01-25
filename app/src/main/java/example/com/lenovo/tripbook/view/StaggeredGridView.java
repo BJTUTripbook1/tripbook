@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package example.com.lenovo.tripbook;
+package example.com.lenovo.tripbook.view;
 
 import android.content.Context;
 import android.content.res.Configuration;
@@ -28,6 +28,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.Arrays;
+
+import example.com.lenovo.tripbook.R;
 
 /**
  * MainPageActivity staggered grid view which supports multiple columns with rows of varying sizes.

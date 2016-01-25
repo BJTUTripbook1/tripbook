@@ -1,23 +1,21 @@
-package example.com.lenovo.tripbook;
+package example.com.lenovo.tripbook.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.widget.TextView;
+import android.widget.ImageView;
 
 /**
- *
- * MainPageActivity {@link TextView} that maintains a consistent width to height aspect ratio.
- * In the real world this would likely extend ImageView.
+ * An {@link ImageView} layout that maintains a consistent width to height aspect ratio.
  */
-public class DynamicHeightTextView extends TextView {
+public class DynamicHeightImageView extends ImageView {
 
     private double mHeightRatio;
 
-    public DynamicHeightTextView(Context context, AttributeSet attrs) {
+    public DynamicHeightImageView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public DynamicHeightTextView(Context context) {
+    public DynamicHeightImageView(Context context) {
         super(context);
     }
 

@@ -148,6 +148,9 @@
  <color name="transparent">#0000</color><!-- 透明 -->
  <color name="transparent2">#8000</color><!-- 透明 -->
  
+ <color name="none_color">#00000000</color>
+ <color name="plugin_camera_black">#000000</color>
+ <color name="albumback">#E1E0DE</color>
 
  <color name="title">#1fa2a7</color>
  
